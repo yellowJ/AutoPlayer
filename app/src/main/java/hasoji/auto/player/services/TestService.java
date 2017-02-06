@@ -65,6 +65,7 @@ public class TestService extends AccessibilityService {
                     Log.e("LookAllNode", node.getViewIdResourceName());
                 }
             } else {
+                Log.e("LookAllNode", "node.class ==>> " + node.getClassName());
                 for (int i = 0; i < count; i++) {
                     lookAllNode(node.getChild(i));
                 }
